@@ -1,0 +1,88 @@
+body{
+	width: 458px;
+}
+#nav div{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#nav div a{
+    padding: 0;
+    margin: 0;
+}
+.scoll{
+    /*width: 200%;*/
+    overflow: scroll;
+    margin: 10px;
+    height: 250px;
+
+}
+.scoll>div{
+    margin: 5px;
+    width: 170px;
+    /*float: left;*/
+    position: relative;
+    float: left;
+}
+.nav{
+
+	height: 180px;
+	
+}
+.nav li{
+	white-space: nowrap; 
+	display: inline;
+	width: 110px;
+	margin-left: 2px;
+
+}
+.nav li:after{
+	content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:10px;
+    background:white;
+}
+.nav ul{
+	width: 700px !important;
+	display: block;
+	height: 110px;
+	overflow: scroll;
+}
+.mui-scroll{
+	height: 260px !important;
+	overflow: scroll;
+	width: 900px!important;
+}
+#scroll1{
+	height: 260px;
+}
+.mui-card{
+	width: 150px;
+	height: 180px;
+	float: left;
+}
+.nav3{
+	margin: 10px;
+}
+.mui-table-view-cell{
+	margin-top: 20px;
+}
+.nav3{
+	height: 150px;
+}
+.nav3 img{
+	height: 110px !important;
+	max-width: 100px !important;
+	
+}
+.card{
+	width: 90%;
+	height: 270px;
+	margin-top: 10px;
+}
+.card img{
+	height: 150px !important;
+}
