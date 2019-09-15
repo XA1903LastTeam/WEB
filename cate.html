@@ -95,11 +95,11 @@
 			<input id="serchinfo" type="search" style="width: 80%;" /> <button type="button" style='top: 5px;' onclick="search()">搜索</button>
 			</header>
 			<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item mui-active">
+			<a class="mui-tab-item" onclick="aclick()">
 			<span class="mui-icon mui-icon-home"></span>
 			<span class="mui-tab-label">首页</span>
 			</a>
-			<a class="mui-tab-item">
+			<a class="mui-tab-item mui-active">
 			<span class="mui-icon mui-icon-phone"></span>
 			<span class="mui-tab-label" @click="getscate">分类</span>
 			</a>
@@ -192,7 +192,9 @@
 		},
 
 	});
-
+	function aclick() {
+		open('index.html', target='_self')
+	}
 	function search() {
 		var name = document.getElementById('serchinfo').value
 		fetch('http://localhost:8000/fun/search/?info=' + name, {

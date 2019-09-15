@@ -28,3 +28,6 @@ fetch('http://localhost:8000/goods/gethome/',{
         alert('网络链接失败！');
     }
 });
+function aclick() {
+    open('cate.html', target='_self')
+}
